@@ -31,9 +31,10 @@
 							<td><?php echo $data['activity_date'] ?></td>
 							<td><?php echo $data['status'] ?></td>
 							<td>
-			                  		<button class="btn btn-success btn-xs " onclick="generate('<?php echo $data['id']?>');">
-			                  			<i class="fa fa-sliders" aria-hidden=></i> Generate
-			                  		</button>
+			                  		
+			                  		<button class="btn btn-success btn-xs" data-toggle="modal" data-target="generateList" title="Generate">
+                              			<i class="fa fa-sliders" aria-hidden=></i> Generate
+                           			</button>
 								</td>
 							</tr>
 							<?php }} ?>
