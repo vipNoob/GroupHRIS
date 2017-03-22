@@ -253,7 +253,7 @@
                      <div class="form-group">
                         <label class="col-sm-2 control-label col-lg-2">Name:</label>
                         <div class="col-lg-3">
-                           <input type="text" class="form-control" name="spouse_name"></input>
+                           <input type="text" cl ass="form-control" name="spouse_name"></input>
                         </div>
                         <label class="col-sm-2 control-label col-lg-2">Occupation:</label>
                         <div class="col-lg-3">

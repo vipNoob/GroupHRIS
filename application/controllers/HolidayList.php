@@ -50,6 +50,7 @@ class HolidayList extends CI_Controller
 			$this->load->view("common/nav");
 			$data['list']= $this->MdHolidays->getAll();
 			$this->load->view('pages/configuration_module/holiday_list_view',$data);
+			$this->load->view('modal/editHoliday');
 			$this->load->view('common/foot');
 			$this->load->view('common/footer');
 			}else{
@@ -60,5 +61,6 @@ class HolidayList extends CI_Controller
 			redirect('/');
 		}
 	}
+
 }
 ?>

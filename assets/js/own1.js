@@ -6,6 +6,9 @@ $('.submitEdit').click(function() {
 });
 $('.editLeave').click(function() {
     var _getAtt = $(this).attr('data_attr');
+
+
+
     $.ajax({
         type: 'GET',
         url: 'LeaveRequest/getInfo',
@@ -1012,3 +1015,36 @@ $('.update201file').click(function(){
     var data_upd = $('.updateForm').serialize();
     alert(data_upd);
 })
+
+
+$('.editholidaybutton').click(function() {
+    var data = $('.editHoliday').serialize();
+    var id = $('.holidayId').val();
+    alert(data);
+    $.ajax({
+        type: 'GET',
+        url: 'LeaveRequest/update',
+        data: {
+            data: data,
+            id: id
+        },
+        success: function(success) {
+            // var parse = JSON.parse(success);
+            // alert(success);
+            $('.emp_no').val(parse[0]['emp_no']);
+               $('.company').val($company);
+               $('.name').val(parse[0]['last_name']+','+parse[0]['first_name']);
+               $('.date_birth').val(parse[0]['birth_date']);
+               $('.mstatus').val(parse[0]['civil_status']);
+               $('.placeDate').val(parse[0]['birth_place']);
+               $('.nationality').val(parse[0]['nationality']);
+               $('.religion').val(parse[0]['religion']);
+               $('.email').val(parse[0]['email']);
+               $('.number').val(parse[0]['contact_number']);
+               $('.haddress').val(parse[0]['address']);
+               $('.hnumber').val(parse[0]['phone']);
+
+        }
+    });
+
+});
