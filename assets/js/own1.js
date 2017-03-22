@@ -1007,3 +1007,8 @@ $('.deleteItem').click(function() {
 
     });
 });
+
+$('.update201file').click(function(){
+    var data_upd = $('.updateForm').serialize();
+    alert(data_upd);
+})
