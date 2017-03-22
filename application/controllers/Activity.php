@@ -80,9 +80,7 @@ class Activity extends CI_Controller
 				echo '0';
 			}
 	}
-	public function generate(){
-		echo '<script>alert("Hellow World")</script>';
-	}
+	
 	
 }
 ?>
