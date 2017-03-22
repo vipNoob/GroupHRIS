@@ -11,7 +11,7 @@
                </header>
                <div class="panel-body">
                   <fieldset>
-                     <legend><h5>Very Personal Information</h5></legend>
+                     <legend><h5>Personal Information</h5></legend>
                      <div class="form-group">
                         <label class="col-sm-2 col-sm-2 control-label"><label style="color:red">*</label>Employee No:</label>
                         <div class="col-lg-2">
