@@ -51,6 +51,7 @@ class ActivityList extends CI_Controller
 			$this->load->view("common/nav");
 			$data['activity'] =  $this->MdActivity->getActivity();
 			$this->load->view('pages/gamification/viewActivity',$data);
+			$this->load->view('modal/generateList');
 			$this->load->view('common/foot');
 			$this->load->view('common/footer');
 			}else{

@@ -33,7 +33,10 @@
 								<td><?php echo $list['holiday_type'] ?></td>							
 								<td><?php echo $company ?></td>							
 								<td>
-									<button class="btn btn-success btn-xs " data_attr="<?php echo $this->encrypt->encode($list['holiday_id']); ?>" data-toggle="modal" data-target="#" title="edit"><i class="fa fa-check"></i></button>
+									
+									  <a href="<?php echo base_url('Add201File/view'); ?>?holiday_id=<?php echo $list['holiday_id'] ?>" class="btn btn-success btn-xs">
+										<i class="fa fa-pencil"></i>
+									</a>
                                  	<button class="btn btn-danger btn-xs delete_client" mAtt="<?php echo $this->encrypt->encode($list['holiday_id']); ?>" title="trash"><i class="fa fa-trash-o "></i></button>
                                  </td>
 							</tr>
