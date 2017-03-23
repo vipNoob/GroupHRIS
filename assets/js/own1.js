@@ -387,15 +387,14 @@ $('.add201File').click(function() {
             data_upd: data_upd
         },
         success: function(success) {
-            alert(success);
-            // if (success === '1') {
-            //     toastr.success('Successfully added File', '');
-            //     setTimeout(function() {
-            //         location.reload();
-            //     }, 1000);
-            // } else {
-            //     toastr.error('Error Please Make sure to fill in All necessary fields', '');
-            // }
+            if (success === '1') {
+                toastr.success('Successfully added File', '');
+                setTimeout(function() {
+                    location.reload();
+                }, 1000);
+            } else {
+                toastr.error('Error Please Make sure to fill in All necessary fields', '');
+            }
         }
     });
 });
